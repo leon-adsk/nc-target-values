@@ -1,4 +1,4 @@
-## 🎯 Target Value Optimization in Neural Networks
+## Target Value Optimization in Neural Networks
 
 When training a classification neural network, each output neuron represents a class. For example, in a 3-class problem (`cat`, `dog`, `rat`), a typical target vector for a `cat` image might be:
 
@@ -12,9 +12,9 @@ This project explores **dynamically optimizing** these values during training in
 
 📄 See [`/docs`](./docs) for more details.
 
-## ✅ TO-DO
+## TO-DO
 
-### 🧩 Implementation
+### Implementation
 - [X] Implement basic σ-adaptation logic (only nc)
 - [X] Switch to using one non-class value for each class instead of one global one
 - [X] Fix confidence calculation: Calculate cosine similarity of output vector to closest target vector (not necessarily the correct target)
@@ -28,11 +28,11 @@ This project explores **dynamically optimizing** these values during training in
   - [ ] Try taking all the initial preferences and remapping them to use the full (0,1) range
 - [ ] Try pushing after each batch 
 
-### 🧠 Algorithm Design
+### Algorithm Design
 - [X] Refine the σ-adaptation strategy (tuning, edge cases)
 - [X] Explore and prototype additional adaptation methods
 
-### 🔬 Research & Evaluation
+### Research & Evaluation
 - [X] Define evaluation metrics beyond accuracy/loss (e.g. training speed, confidence margin)
 - [X] Analyze, visualize, and summarize results
 - [X] Draft and outline the research paper
